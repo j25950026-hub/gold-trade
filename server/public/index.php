@@ -4,11 +4,8 @@
 // +----------------------------------------------------------------------
 namespace think;
 
-// 定义应用目录
+// [ 应用入口文件 ]
 define('APP_PATH', __DIR__ . '/../application/');
 
-// 加载基础文件
-require __DIR__ . '/../thinkphp/base.php';
-
-// 执行应用
-Container::get('app')->run()->send();
+// 加载框架引导文件
+require __DIR__ . '/../thinkphp/start.php';
