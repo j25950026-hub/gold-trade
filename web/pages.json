@@ -1,0 +1,41 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "中国黄金",
+    "navigationBarBackgroundColor": "#1a1a2e",
+    "backgroundColor": "#0f0f1a",
+    "app-plus": {
+      "background": "#0f0f1a"
+    }
+  },
+  "condition": {},
+  "pages": [
+    {"path": "pages/index/index", "style": {"navigationBarTitleText": "中国黄金"}},
+    {"path": "pages/login/login", "style": {"navigationStyle": "custom"}},
+    {"path": "pages/product/product", "style": {"navigationBarTitleText": "行情"}},
+    {"path": "pages/deal/deal", "style": {"navigationBarTitleText": "交易"}},
+    {"path": "pages/order/order", "style": {"navigationBarTitleText": "订单"}},
+    {"path": "pages/user/user", "style": {"navigationBarTitleText": "个人中心"}},
+    {"path": "pages/recharge/recharge", "style": {"navigationBarTitleText": "充值"}},
+    {"path": "pages/withdraw/withdraw", "style": {"navigationBarTitleText": "提现"}},
+    {"path": "pages/team/team", "style": {"navigationBarTitleText": "团队"}},
+    {"path": "pages/user/moneylog", "style": {"navigationBarTitleText": "资金明细"}},
+    {"path": "pages/user/changepwd", "style": {"navigationBarTitleText": "修改密码"}},
+    {"path": "pages/user/auth", "style": {"navigationBarTitleText": "实名认证"}},
+    {"path": "pages/withdraw/record", "style": {"navigationBarTitleText": "提现记录"}},
+    {"path": "pages/recharge/usdt", "style": {"navigationBarTitleText": "USDT充值"}}
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#d4a849",
+    "borderStyle": "black",
+    "backgroundColor": "#1a1a2e",
+    "list": [
+      {"pagePath": "pages/index/index", "text": "首页", "iconPath": "static/tab/home.png", "selectedIconPath": "static/tab/home_active.png"},
+      {"pagePath": "pages/product/product", "text": "行情", "iconPath": "static/tab/market.png", "selectedIconPath": "static/tab/market_active.png"},
+      {"pagePath": "pages/deal/deal", "text": "交易", "iconPath": "static/tab/trade.png", "selectedIconPath": "static/tab/trade_active.png"},
+      {"pagePath": "pages/order/order", "text": "记录", "iconPath": "static/tab/order.png", "selectedIconPath": "static/tab/order_active.png"},
+      {"pagePath": "pages/user/user", "text": "我的", "iconPath": "static/tab/user.png", "selectedIconPath": "static/tab/user_active.png"}
+    ]
+  }
+}

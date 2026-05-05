@@ -1,0 +1,11 @@
+{
+  "name": "gold-trade",
+  "version": "1.0.0",
+  "description": "中国黄金 - 秒合约交易系统",
+  "main": "main.js",
+  "scripts": {},
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vuex": "^3.1.3"
+  }
+}
