@@ -6,6 +6,15 @@ ThinkPHP 5.0.24 使用 `preg_replace_callback()` 时传入 `null` 作为 `$subje
 
 ## 修复方案（任选一个）
 
+### ⚠️ 注意！服务器上还有旧Nginx配置在劫持/api/路由！
+检查确认 `ls -la /etc/nginx/sites-enabled/`，看到有default或其他配置的，
+删除冲突配置（不影响其他项目，只看端口是否冲突）：
+```bash
+# 先看看都有什么
+ls -la /etc/nginx/sites-enabled/
+# 确认gold.conf是唯一要用的
+```
+
 ### 方案A：替换index.php（推荐，不影响其他项目）
 ```bash
 cat > /var/www/gold-trade/server/public/index.php << 'PHPEOF'
